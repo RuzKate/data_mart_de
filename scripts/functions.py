@@ -1,6 +1,13 @@
 import time
 
 def data_mart_calculation_turnover(connection, date):
+    """Запуск расчёта ежедневной витрины оборотов
+    
+        :param connection: сессия базы данных
+        :type connection: объект connection
+        :param date: дата
+        :type date: str
+    """
     cursor = connection.cursor()
 
     try:
@@ -14,6 +21,13 @@ def data_mart_calculation_turnover(connection, date):
 
 
 def data_mart_calculation_f101(connection, date):
+    """Запуск расчёта 101-й отчетной формы 
+    
+        :param connection: сессия базы данных
+        :type connection: объект connection
+        :param date: дата
+        :type date: str
+    """
     cursor = connection.cursor()
 
     try:
